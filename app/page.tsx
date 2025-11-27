@@ -81,6 +81,13 @@ export default function Home() {
         >
           Go to Page 1
         </button>
+        <button
+          onClick={() => router.push('/Page2')}
+          className="bg-indigo-500 hover:border-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-all duration-200 my-10"
+          style={{ cursor: 'pointer' }}
+        >
+          Go to Page 2
+        </button>
       </div>
     </div>
   )

@@ -74,32 +74,65 @@ export default function Page1() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.
         </p>
 
-      <div className="flex flex-col items-center justify-center mb-10">
-        <div className="bg-amber-400/10 border border-amber-400/20 rounded-2xl p-6"> 
-          <h2 className="text-2xl font-bold mb-4 text-indigo-600">Radio Option</h2>   
-          <label
-            className="mt-10 mb-10 px-6"
-          >
-            <div className="flex gap-x-4 rounded-2xl p-4 has-checked:bg-indigo-600">
-              <input name="payment" type="radio" />
-            <p className="font-semibold">
-            Option 1
-            </p>
-            </div>
-          </label>  
-          <label
-            className="mt-10 mb-10 px-6"
-          >
-            <div className="flex gap-x-4 rounded-2xl p-4 has-checked:bg-indigo-600">
-              <input name="payment" type="radio" />
-            <p className="font-semibold">
-            OPtion 2
-            </p>
-            </div>
+        <div className="flex flex-col items-center justify-center mb-10">
+          <div className="bg-amber-400/10 border border-amber-400/20 rounded-2xl p-6"> 
+            <h2 className="text-2xl font-bold mb-4 text-indigo-600">Radio Option</h2>   
+            <label
+              className="mt-10 mb-10 px-6"
+            >
+              <div className="flex gap-x-4 rounded-2xl p-4 has-checked:bg-indigo-600">
+                <input name="payment" type="radio" />
+              <p className="font-semibold">
+              Option 1
+              </p>
+              </div>
+            </label>  
+            <label
+              className="mt-10 mb-10 px-6"
+            >
+              <div className="flex gap-x-4 rounded-2xl p-4 has-checked:bg-indigo-600">
+                <input name="payment" type="radio" />
+              <p className="font-semibold">
+              OPtion 2
+              </p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      {/* ---------------- FILE UPLOAD & BACK BUTTON ---------------- */}
+      <div className="flex flex-col items-center justify-center space-y-6">
+      <input
+        type="file"
+        className="file:mr-4 file:rounded-full file:border-0 file:bg-violet-50 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-violet-700 hover:file:bg-violet-100 dark:file:bg-violet-600 dark:file:text-violet-100 dark:hover:file:bg-violet-500 ..."
+      />
+
+      <fieldset aria-label="Choose a memory option">
+        <div className="flex items-center justify-between">
+          <div>RAM</div>
+          <a href="#"> See performance specs </a>
+        </div>
+        <div className="mt-4 grid grid-cols-6 gap-2 pointer-coarse:mt-6 pointer-coarse:grid-cols-3 pointer-coarse:gap-4">
+          <label className="p-2 pointer-coarse:p-4 has-checked:bg-indigo-600 rounded-lg">
+            <input type="radio" name="memory-option" value="4 GB" className="sr-only" />
+            <span>4 GB</span>
+          </label>
+          <label className="p-2 pointer-coarse:p-4 has-checked:bg-indigo-600 rounded-lg">
+            <input type="radio" name="memory-option" value="8 GB" className="sr-only" />
+            <span>8 GB</span>
+          </label>
+          <label className="p-2 pointer-coarse:p-4 has-checked:bg-indigo-600 rounded-lg">
+            <input type="radio" name="memory-option" value="16 GB" className="sr-only" />
+            <span>16 GB</span>
+          </label>
+          <label className="p-2 pointer-coarse:p-4 has-checked:bg-indigo-600 rounded-lg">
+            <input type="radio" name="memory-option" value="32 GB" className="sr-only" />
+            <span>32 GB</span>
           </label>
         </div>
+      </fieldset>
 
-      </div>
+
 
       <button
         className="bg-indigo-500 hover:border-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-all duration-200"
