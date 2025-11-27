@@ -82,7 +82,6 @@ export default function Home() {
           Go to Page 1
         </button>
       </div>
-
     </div>
   )
 }

@@ -7,6 +7,25 @@ export default function Services() {
   const router = useRouter()
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
+  const Services = [
+    {
+      title: "Web Development",
+      description: "We build responsive, modern, and high-performance websites tailored to your business needs.",
+    },
+    {
+      title: "Mobile App Development",
+      description: "Create powerful mobile applications with smooth UI, secure backend, and excellent performance.",
+    },
+    {
+      title: "UI / UX Design",
+      description: "Beautiful, user-friendly designs crafted for the best digital experiences.",
+    },
+    {
+      title: "SEO & Marketing",
+      description: "Boost visibility, ranking, and conversions with powerful digital marketing strategies.",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gray-900 text-white">
 
@@ -76,7 +95,16 @@ export default function Services() {
         </p>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+          {Services.map((service) => (
+            <div key={service.title} className="p-7 rounded bg-gray-800 border border-gray-700 hover:border-indigo-400 hover:bg-gray-800/80 transition-all duration-300 shadow-lg">
+              <h2 className="text-2xl font-semibold mb-3">{service.title}</h2>
+              <p className="text-gray-300">
+                {service.description}
+              </p>
+            </div>
+          ))}
 
             {/* Card 1 */}
             <div className="p-7 rounded-2xl bg-gray-800 border border-gray-700 hover:border-indigo-400 hover:bg-gray-800/80 transition-all duration-300 shadow-lg">

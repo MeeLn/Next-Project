@@ -73,6 +73,34 @@ export default function Page1() {
         <p className="text-lg text-gray-300 max-w-xl mb-10">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.
         </p>
+
+      <div className="flex flex-col items-center justify-center mb-10">
+        <div className="bg-amber-400/10 border border-amber-400/20 rounded-2xl p-6"> 
+          <h2 className="text-2xl font-bold mb-4 text-indigo-600">Radio Option</h2>   
+          <label
+            className="mt-10 mb-10 px-6"
+          >
+            <div className="flex gap-x-4 rounded-2xl p-4 has-checked:bg-indigo-600">
+              <input name="payment" type="radio" />
+            <p className="font-semibold">
+            Option 1
+            </p>
+            </div>
+          </label>  
+          <label
+            className="mt-10 mb-10 px-6"
+          >
+            <div className="flex gap-x-4 rounded-2xl p-4 has-checked:bg-indigo-600">
+              <input name="payment" type="radio" />
+            <p className="font-semibold">
+            OPtion 2
+            </p>
+            </div>
+          </label>
+        </div>
+
+      </div>
+
       <button
         className="bg-indigo-500 hover:border-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-all duration-200"
         onClick={() => router.push('/')}
